@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* TAGS */
+*
+{
+    transition:0.3s;
+}
+html,body
+{
+  margin:0;
+  height:100vh;
+}
+
+table
+{
+  width: 100%;
+}
+
+.gridItem a
+{
+  color: white;
+  text-decoration: none;
+}
+
+#tabItems a
+{
+  text-decoration: none;
+}
+.indexPage
+{
+    overflow:hidden;
+}
+.paginationContainer a
+{
+  text-decoration: none;
+  margin: 0 5px;
+  background: #dedede;
+  border-radius: 25%;
+}
+
+.logoContainer img,.logoContainer a,#searchButton img
+{
+    height: 100%;
+    outline: none;
+}
+
+.gridItem img
+{
+  max-width: 20vw;
+  min-width: 100px;
+}
+/* CLASSES */
+.logoContainer
+{
+  height: 10vh;
+}
+
+.wrapper
+{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper.indexPage
+{
+  justify-content: center;                 /*vertically center*/
+}
+
+.mainSection
+{
+  display: flex;
+  flex-direction: column;                   /* perfectly center mai lagane ke liye in center horizontally all 3 are necessary*/
+  align-items:center;
+}
+
+.searchBox
+{
+  width: 96%;
+  height: 35px;
+  background: white;
+  border: none;
+  border-radius: 2px;
+  padding: 0 2%;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  box-shadow: 0 1px 20px #c3c3c3;
+  flex-direction: column;
+  outline: none;
+  font-size: 25px;
+}
+
+.searchBox:hover,.searchBox:active
+{
+  border: none;
+  box-shadow: 0 1px 9px #c3c3c3;
+}
+
+.searchContainer
+{
+  flex-direction: column;
+  display: flex;
+  width: 60vw;
+  margin-top: 15px;
+}
+
+.searchButton
+{
+  margin-top: 35px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: default;
+  font-family: arial,sans-serif;
+  font-weight: bold;
+  padding: 10px 25px;
+  outline: none;
+  font-size:30px;
+}
+
+.header
+{
+  background: #f5f5f5;
+  padding: 0 0 15px 0;
+}
+.searchButton:hover
+{
+  box-shadow: 0 1px 2px #c3c3c3;
+  border:1px solid #c5c5c5;
+  color: black;
+}
+
+.headerContent .logoContainer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.searchBarContainer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15vw;
+}
+
+.active
+{
+  padding: 2.5vw 3vw 0 3vw;
+  border-radius: 3px;
+  border-bottom: 2px solid #005bff;
+  background: #dedede;
+}
+
+.resultContainer
+{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15vw;
+  max-width:60vw;
+}
+
+.url,.title
+{
+  margin: 0;
+  color: #006621;
+}
+
+.result
+{
+  text-decoration: none;
+}
+
+.paginationContainer
+{
+  display: flex;
+  justify-content: center;
+  margin: 3vh 0;
+}
+
+.imageResults
+{
+  margin: 20px;
+}
+
+.gridItem
+{
+  position: relative;
+}
+
+#pageNumbers
+{
+  padding: 0 0.5vw;
+  color: #555;
+  font-size: 1.5vw;
+  font-family: 'Roboto';
+}
+
+#resultCounter
+{
+  color: #626262;
+  font-size: 1vw;
+  margin-left: 15vw;
+}
+#tabItems
+{
+  width: 50%;
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+#searchButton
+{
+  height: 2.5vw;
+  border: none;
+  float: right;
+  margin-top: -2.5vw;
+  background: transparent;
+  cursor: pointer;
+}
+
+#details
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  font-size: 1vw;
+  white-space: nowrap;
+  background-color: rgba(0,0,0,0.8);
+  box-sizing: border-box;
+  visibility: hidden;
+}
+
+.gridItem:hover #details
+{
+  visibility: visible;
+}
