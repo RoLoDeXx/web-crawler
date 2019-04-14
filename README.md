@@ -1,5 +1,5 @@
 <h1><b>Google clone</b></h1>
-<h3>The following project is an HORRIBLE! "re-creation" of the Google search engine</h3><br />
+<h3>The following project is a HORRIBLE! "re-creation" of the Google search engine</h3><br />
 
 <p><b>As of now the clone can do the following :-</b></p>
 <ul>
